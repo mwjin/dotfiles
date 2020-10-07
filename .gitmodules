@@ -43,3 +43,6 @@
 [submodule "vim/.vim/bundle/vim-monokai"]
 	path = vim/.vim/bundle/vim-monokai
 	url = https://github.com/sickill/vim-monokai.git
+[submodule "tmux/.tmux"]
+	path = tmux/.tmux
+	url = https://github.com/gpakosz/.tmux.git
