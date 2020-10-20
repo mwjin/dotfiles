@@ -1,2 +1,2 @@
-# my-dev-env
-Setting files to improve my development environment
+# dotfiles
+Configuration files for my development environment
