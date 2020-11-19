@@ -40,7 +40,6 @@ Plugin 'ctrlpvim/ctrlp.vim'     " file string search
 Plugin 'majutsushi/tagbar'      " tag explorer                                  
 Plugin 'rhysd/vim-clang-format' " code styler                                   
 Plugin 'tmhedberg/simpylfold'   " code folder
-Plugin 'c.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
