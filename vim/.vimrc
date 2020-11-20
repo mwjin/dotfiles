@@ -91,6 +91,7 @@ set smarttab
 set smartindent
 set softtabstop=4
 set tabstop=4
+set expandtab  " type a tab character as spaces
 set ruler 
 set incsearch
 set statusline=\ %<%l:%v\ [%P]%=%a\ %h%m%r\ %F\
