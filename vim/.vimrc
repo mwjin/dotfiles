@@ -72,7 +72,6 @@ syntax enable
 colorscheme monokai
 set hlsearch
 set nu 
-set autoindent
 set scrolloff=2
 set wildmode=longest,list
 set ts=4 
@@ -89,6 +88,7 @@ set showmatch
 set smartcase 
 set smarttab
 set smartindent
+set autoindent
 set softtabstop=4
 set tabstop=4
 set expandtab  " type a tab character as spaces
