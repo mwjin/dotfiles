@@ -7,9 +7,6 @@
 [submodule "vim/.vim/bundle/nerdtree"]
 	path = vim/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/.vim/bundle/simpylfold"]
-	path = vim/.vim/bundle/simpylfold
-	url = https://github.com/tmhedberg/simpylfold.git
 [submodule "vim/.vim/bundle/syntastic"]
 	path = vim/.vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -31,9 +28,6 @@
 [submodule "vim/.vim/bundle/vim-cpp-modern"]
 	path = vim/.vim/bundle/vim-cpp-modern
 	url = https://github.com/bfrg/vim-cpp-modern.git
-[submodule "vim/.vim/bundle/vim-fugitive"]
-	path = vim/.vim/bundle/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/.vim/bundle/vim-gitgutter"]
 	path = vim/.vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
