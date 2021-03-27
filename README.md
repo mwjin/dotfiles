@@ -8,6 +8,7 @@ git clone https://github.com/mwjjeong/dotfiles.git
 ```
 2. Execute copy_to_home.sh inside the cloned directory, which makes the configuration files available in your home directory.
 ```bash
-chmod 755 copy_to_home.sh  # if this is not executable yet
-./copy_to_home.sh
+chmod 755 copy_to_home.sh           # if this is not executable yet
+./copy_to_home.sh                   # If you want to copy all
+./copy_to_home.sh {directory_name}  # If you want to copy a specific directory
 ```
