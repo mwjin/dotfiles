@@ -99,14 +99,20 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Remove the hostname and put the command line on a second prompt line
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(anaconda dir rbenv vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir anaconda rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+
+# For the dir prompt element
+POWERLEVEL9K_DIR_HOME_BACKGROUND='cyan'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='cyan'
+POWERLEVEL9K_DIR_ETC_BACKGROUND='cyan'
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='cyan'
 
 # For the anaconda prompt element
 POWERLEVEL9K_ANACONDA_LEFT_DELIMITER=""
 POWERLEVEL9K_ANACONDA_RIGHT_DELIMITER=""
-POWERLEVEL9K_ANACONDA_BACKGROUND="green"
+POWERLEVEL9K_ANACONDA_BACKGROUND="yellow3"
 
 # Add a space in the first prompt
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%f"
@@ -116,7 +122,7 @@ local user_symbol="$"
 if [[ $(print -P "%#") =~ "#" ]]; then
     user_symbol = "#"
 fi
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%{%B%F{black}%K{yellow}%} $user_symbol%{%b%f%k%F{yellow}%} %{%f%}"
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%{%B%F{green}%K{black}%} $user_symbol%{%b%f%k%F{black}%} %{%f%}"
 
 # Highlight syntax
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -154,3 +160,5 @@ unset __conda_setup
 source $HOME/anaconda3/etc/profile.d/conda.sh 
 [[ -z $TMUX ]] || conda deactivate; conda activate base
 
+# Here is my custom.
+cdpath=($HOME/projects) 
