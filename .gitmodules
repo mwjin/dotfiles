@@ -43,3 +43,6 @@
 [submodule "bash/.oh-my-bash"]
 	path = bash/.oh-my-bash
 	url = https://github.com/ohmybash/oh-my-bash
+[submodule "vim/.vim/bundle/vim-fugitive"]
+	path = vim/.vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
