@@ -12,7 +12,7 @@ then
     for dotfile in ${dotfiles[@]}
     do
         dotfile_path="$dir/$dotfile";
-        cmd="cp -r $dotfile_path $HOME/.";
+        cmd="cp -n -r $dotfile_path $HOME/.";
         echo "[CMD] $cmd";
         $cmd;
     done;
@@ -27,7 +27,7 @@ else
         for dotfile in ${dotfiles[@]}
         do
             dotfile_path="$dir/$dotfile";
-            cmd="cp -r $dotfile_path $HOME/.";
+            cmd="cp -n -r $dotfile_path $HOME/.";
             echo "[CMD] $cmd";
             $cmd;
         done;
