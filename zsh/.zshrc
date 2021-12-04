@@ -105,43 +105,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Remove the hostname and put the command line on a second prompt line
-POWERLEVEL10K_LEFT_PROMPT_ELEMENTS=(dir anaconda rbenv vcs)
-POWERLEVEL10K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
-POWERLEVEL10K_PROMPT_ON_NEWLINE=true
-
-# For the dir prompt element
-POWERLEVEL10K_DIR_HOME_BACKGROUND='cyan'
-POWERLEVEL10K_DIR_HOME_SUBFOLDER_BACKGROUND='cyan'
-POWERLEVEL10K_DIR_ETC_BACKGROUND='cyan'
-POWERLEVEL10K_DIR_DEFAULT_BACKGROUND='cyan'
-
-# For the anaconda prompt element
-POWERLEVEL10K_ANACONDA_LEFT_DELIMITER=""
-POWERLEVEL10K_ANACONDA_RIGHT_DELIMITER=""
-POWERLEVEL10K_ANACONDA_BACKGROUND="yellow3"
-
-# Add a space in the first prompt
-POWERLEVEL10K_MULTILINE_FIRST_PROMPT_PREFIX="%f"
-
 # Visual customisation of the second prompt line
 local user_symbol="$"
 if [[ $(print -P "%#") =~ "#" ]]; then
     user_symbol = "#"
 fi
-POWERLEVEL10K_MULTILINE_LAST_PROMPT_PREFIX="%{%B%F{green}%K{black}%} $user_symbol%{%b%f%k%F{black}%} %{%f%}"
 
 # Highlight syntax
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Newline after a command
-POWERLEVEL10K_PROMPT_ADD_NEWLINE=true
-
-# Colorise the top Tabs of Iterm2 with the same color as background
-# Just change the 18/26/33 wich are the rgb values
-# echo -e "\033]6;1;bg;red;brightness;18\a"
-# echo -e "\033]6;1;bg;green;brightness;26\a"
-# echo -e "\033]6;1;bg;blue;brightness;33\a"
 
 # Plugins
 plugins=(
