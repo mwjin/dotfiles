@@ -19,3 +19,10 @@ chmod 755 copy_to_home.sh           # if this is not executable yet
 ./copy_to_home.sh                   # If you want to copy all
 ./copy_to_home.sh {directory_name}  # If you want to copy a specific directory
 ```
+
+5. For _zsh_, install the following things, and follow each guideline when installing each of them.
+
+   1. Install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+   2. Install [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+
+6. For _zsh_, configure your terminal using `p10k configure`
