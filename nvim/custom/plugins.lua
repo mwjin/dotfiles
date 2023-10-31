@@ -1,6 +1,7 @@
 local plugins = {
   {
     "rcarriga/nvim-dap-ui",
+    event = "VeryLazy",
     dependencies = "mfussenegger/nvim-dap",
     config = function()
       local dap = require("dap")
@@ -33,6 +34,9 @@ local plugins = {
   },
   {
     "mfussenegger/nvim-dap",
+    config = function(_, _)
+      require("core.utils").load_mappings("dap")
+    end
   },
   {
     "jose-elias-alvarez/null-ls.nvim",
