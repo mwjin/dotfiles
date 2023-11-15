@@ -59,6 +59,10 @@ local plugins = {
         "clangd",
         "clang-format",
         "codelldb",
+        "pyright",
+        "mypy",
+        "ruff",
+        "black",
       }
     }
   }
